@@ -24,7 +24,7 @@
 	data_release_status	Has data release started?	If the study will collect/produce data and make at least some of the data available, indicate whether the study has not started, has started, or has finished data release activities. Must be one of: ['not started', 'started', 'finished'].		string	20		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	data_release_start_date	Date when first data will be released(Anticipated)	If study will collect/produce data and make at least some of the data available, indicate the anticipated date when first data will be released.		date	21		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	data_release_finish_date	Date when last data will be released (Anticipated)	If study will produce data and make at least some of the data available, indicate the anticipated date when last data will be released (data release is complete).		date	22		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
-	produce_other	Indicate whether or not the study will produce shareable products other than data	Indicate whether or not the study will produce shareable products other than data		int	23		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
+	produce_other	Indicate whether or not the study will produce shareable products other than data	Indicate whether or not the study will produce shareable products other than data		numeric	23		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	findings	Findings			none	24		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		heal
 	primary_study_findings	Primary Study Findings	Simple, one-sentence take-away conclusion(s) from study author publications; one item in this array per single-sentence conclusion (e.g. item #1: Provision of MAT rx to men with documented OUD leaving jail reduces overdose risk by 9%; item #2: Provision of MAT rx plus case management support to men with documented OUD leaving jail reduces overdose risk by 30%; item 3: Provision of MAT rx plus case management support to men with documented OUD leaving jail is more effective than provision of MAT rx alone at reducing risk of OUD overdose). 		textbox	25		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	findings	heal
 	secondary_publications	Secondary Publications DOI	List of the doi for any/all secondary study publications that use the study data; include any papers, books, articles, blog posts, etc. authored by persons OTHER THAN the investigators or team responsible for the study; one item in this array per publication/doi. 		textbox	26		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	findings	heal
@@ -74,4 +74,11 @@
 	data_restricted	all		0											
 	data_restricted	some		1											
 	data_restricted	none		2											
-	data_collection_status														
+	data_collection_status	started		0											
+	data_collection_status	not started		1											
+	data_collection_status	finished		2											
+	data_release_status	started		0											
+	data_release_status	not started		1											
+	data_release_status	finished		2											
+	study_translational_focus	Condition		0											
+	study_translational_focus	Treatment 		1											
