@@ -1,0 +1,20 @@
+heal,qdr
+study_name,title
+study_description,dsDescriptionValue
+study_nickname,alternativeTitle
+nih_application_id,grantNumberValue
+other_study_websites,alternativeURL
+funder_name,grantNumberAgency
+funding_award_ID,grantNumberValue
+investigator_*_name,authorName
+investigator_affiliation,authorAffiliation
+investigator_ID_type,authorIdentifierScheme
+investigator_ID_value,authorIdentifier
+contact_*_name,datasetContactName
+contact_affiliation,datasetContactAffiliation
+contact_email,datasetContactEmail
+data_collection_start_date,dateOfCollectionStart
+data_collection_finish_date,dateOfCollectionEnd
+primary_publications,publication
+secondary_publications,otherReferences
+data_type,kindOfData (NOT identical)
