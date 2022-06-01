@@ -18,26 +18,26 @@
 	registrant_email	Institutional email of study registrant	Institutional email of study registrant		email	14		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
 	data_availability	Data availability			none	15		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
 	produce_data	Will the study collect or produce data?	Indicate whether or not the study will collect/produce (primary or secondary) data.		int	16		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
-	data_available	Will the study make data available?	If study will collect/produce data, indicate whether all, some, or none of the data will be made available. Must be one of: ['all', 'some', 'none'].		string	17		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
-	data_restricted	Will available data have restrictions on access?	If study will collect/produce data, and make at least some of that data available, indicate whether all, some, or none of the data will have restriction(s) on access beyond acknowledgement and signing of a minimal DSA. Must be one of: ['all', 'some', 'none'].		string	18		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
-	data_collection_status	Has data collection/production started?	If study will collect/produce data, indicate whether the study has not started, has started, or has finished data collection/production activities. Must be one of: ['not started', 'started', 'finished'].		string	19		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
-	data_release_status	Has data release started?	If the study will collect/produce data and make at least some of the data available, indicate whether the study has not started, has started, or has finished data release activities. Must be one of: ['not started', 'started', 'finished'].		string	20		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
+	data_available	Will the study make data available?	If study will collect/produce data, indicate whether all, some, or none of the data will be made available.		string	17		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
+	data_restricted	Will available data have restrictions on access?	If study will collect/produce data, and make at least some of that data available, indicate whether all, some, or none of the data will have restriction(s) on access beyond acknowledgement and signing of a minimal DSA.		string	18		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
+	data_collection_status	Has data collection/production started?	If study will collect/produce data, indicate whether the study has not started, has started, or has finished data collection/production activities.		string	19		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
+	data_release_status	Has data release started?	If the study will collect/produce data and make at least some of the data available, indicate whether the study has not started, has started, or has finished data release activities.		string	20		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	data_release_start_date	Date when first data will be released(Anticipated)	If study will collect/produce data and make at least some of the data available, indicate the anticipated date when first data will be released.		date	21		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	data_release_finish_date	Date when last data will be released (Anticipated)	If study will produce data and make at least some of the data available, indicate the anticipated date when last data will be released (data release is complete).		date	22		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	produce_other	Indicate whether or not the study will produce shareable products other than data	Indicate whether or not the study will produce shareable products other than data		numeric	23		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	findings	Findings			none	24		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
 	primary_study_findings	Primary Study Findings	Simple, one-sentence take-away conclusion(s) from study author publications; one item in this array per single-sentence conclusion (e.g. item #1: Provision of MAT rx to men with documented OUD leaving jail reduces overdose risk by 9%; item #2: Provision of MAT rx plus case management support to men with documented OUD leaving jail reduces overdose risk by 30%; item 3: Provision of MAT rx plus case management support to men with documented OUD leaving jail is more effective than provision of MAT rx alone at reducing risk of OUD overdose). 		textbox	25		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	findings	heal
 	secondary_publications	Secondary Publications DOI	List of the doi for any/all secondary study publications that use the study data; include any papers, books, articles, blog posts, etc. authored by persons OTHER THAN the investigators or team responsible for the study; one item in this array per publication/doi. 		textbox	26		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	findings	heal
-	study_translational_focus	Study Translational Focus	Whether the study is primarily focused on learning more about a human opioid or pain CONDITION or on discovering, or learning more about a TREATMENT, intervention, or solution for a human opioid or pain condition. This may be quite simple to infer for human subject studies. For studies not involving human subjects, please consider how/where the study will most substantially contribute to the HEAL Initiative translational purpose of learning more about human opioid and pain conditions and driving development of solutions to these conditions. Choose one. Must be one of: ['Condition', 'Treatment'].		text	27		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	findings	heal
-	study_translational_topic_grouping	Types of determinants/mechanisms the study is investigating	What types of determinants and/or mechanisms related to human opioid use or pain conditions is the study investigating and/or measuring (e.g. A study investigating differential pain/nociception signaling in persons living in neighborhoods with high versus low social cohesion might choose both 'Biology and Health' and 'Social Determinants'). Choose as many as apply. Must be one of: ['Biology and Health', 'Mental Health', 'Social Determinants', 'Public Attitudes or Stigma'].		text	28		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	findings	heal
+	study_translational_focus	Study Translational Focus	Whether the study is primarily focused on learning more about a human opioid or pain CONDITION or on discovering, or learning more about a TREATMENT, intervention, or solution for a human opioid or pain condition. This may be quite simple to infer for human subject studies. For studies not involving human subjects, please consider how/where the study will most substantially contribute to the HEAL Initiative translational purpose of learning more about human opioid and pain conditions and driving development of solutions to these conditions. Choose one.		text	27		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	findings	heal
+	study_translational_topic_grouping	Types of determinants/mechanisms the study is investigating	What types of determinants and/or mechanisms related to human opioid use or pain conditions is the study investigating and/or measuring (e.g. A study investigating differential pain/nociception signaling in persons living in neighborhoods with high versus low social cohesion might choose both 'Biology and Health' and 'Social Determinants'). Choose as many as apply. 		text	28		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	findings	heal
 	study_type	Study type			none	29		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
-	study_stage	Category or Type/Stage of Study Research	The high-level category or type/stage of research being conducted. Must be one of: ['Pre-Research/Protocol Development', 'Basic Research', 'Pre-Clinical Research', 'Clinical Research', 'Implementation Research', 'Post-market Research', 'Business Development', 'Epidemiologic Research'].		text	30		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	study_type	heal
-	study_primary_or_secondary	Is the study conducting primary or secondary research?	Is the study collecting data itself to analyze and draw conclusions or is it leveraging data collected by other entities to analyze and draw conclusions. Must be one of: ['Primary Research', 'Secondary Research'].		text	31		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
-	study_observational_or_experimental	Is the study conducting observational or experimental research?	Whether the study is observational (no explicit intervention) or experimental (some explicit intervention). Must be one of: ['Observational Research', 'Experimental Research'].		text	32		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
-	study_subject_type	Study Subject Type	What is the actual species or entity that is experimentally or observationally studied in the research; each HEAL study will have translational relevance to humans, but not all HEAL studies directly study humans. Must be one of: ['Human', 'Animal', 'Human cell/tissue/tissue model', 'Animal cell/tissue/tissue model', 'Molecule (e.g. chemical/protein engineering, protein crystallization)'].		text	33		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
-	study_type_design	Study Type/Design	The overarching study type and more granular study design. Choose as many as apply. Must be one of: ['Basic Research - Theory/Modeling', 'Basic Research - Applied', 'Basic Research - Method/Protocol development', 'Basic Research - Animal study', 'Basic Research - Cell study', 'Basic Research - Genetic study', 'Basic Research - Biochemistry study', 'Basic Research - Biophysical study', 'Basic Research - Gene sequencing', 'Basic Research - Genetic Engineering', 'Basic Research - Material Development', 'Basic Research - Device Development', 'Basic Research - Small molecule screen', 'Basic Research - High throughput screen', 'Basic Research - Screen, other', 'Clinical Research - Phase I', 'Clinical Research - Phase II', 'Clinical Research - Phase III', 'Clinical Research - Phase IV', 'Clinical Research - Therapy/drug study without intervention', 'Clinical Research - Case Report or Series', 'Preclinical Research', 'Randomized Control Trial', 'Pre/Post', 'Stepped Wedge', 'Regression Discontinuity', 'Difference in Differences', 'Cross-over', 'Natural Experiment', 'Cohort, prospective', 'Cohort, retrospective', 'Cohort - panel, longitudinal', 'Cohort - cross-sectional, longitudinal', 'Cohort - cross-sectional, single time-point', 'Case control', 'Ecological', 'Monitoring/surveillance', 'Inventory', 'Curation', 'Meta-analysis', 'Review', 'Review, Systematic', 'Review, Simple (narrative)'].		text	34		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	study_type	heal
+	study_stage	Category or Type/Stage of Study Research	The high-level category or type/stage of research being conducted.		text	30		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	study_type	heal
+	study_primary_or_secondary	Is the study conducting primary or secondary research?	Is the study collecting data itself to analyze and draw conclusions or is it leveraging data collected by other entities to analyze and draw conclusions. 		text	31		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
+	study_observational_or_experimental	Is the study conducting observational or experimental research?	Whether the study is observational (no explicit intervention) or experimental (some explicit intervention). 		text	32		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
+	study_subject_type	Study Subject Type	What is the actual species or entity that is experimentally or observationally studied in the research; each HEAL study will have translational relevance to humans, but not all HEAL studies directly study humans.		text	33		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	study_type	heal
+	study_type_design	Study Type/Design	The overarching study type and more granular study design. Choose as many as apply. 		text	34		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	study_type	heal
 	human_treatment_applicability	Human treatment applicability			none	35		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
-	treatment_investigation_stage_or_type	Treatment Investigation Stage or Type	If the study is investigating a treatment, intervention, or solution to a human opioid or pain condition, what type of investigation is the study undertaking? at what stage in the treatment investigation process does this study lie? Must be one of: ['target discovery', 'target mechanism', 'treatment discovery', 'treatment mechanism', 'treatment efficacy', 'differential treatment efficacy', 'treatment implementation', 'treatment availability or accessibility'].		text	36		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	human_treatment_applicability	heal
+	treatment_investigation_stage_or_type	Treatment Investigation Stage or Type	If the study is investigating a treatment, intervention, or solution to a human opioid or pain condition, what type of investigation is the study undertaking? at what stage in the treatment investigation process does this study lie?		text	36		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	human_treatment_applicability	heal
 	treatment_mode	Treatment Mode - Preventive, Therapeutic, Harm Reduction	the treatment, intervention, or solution that my study is relevant to meant to prevent the occurrance of a condition (e.g. development of a non-opioid drug for pain to prevent opioid exposure and addiction, case management and MAT for pregnant women to prevent in utero exposure to opioids, safe needle exchange center to prevent spread of blood borne diseases among people using heroin), treat an occurrance of a condition (e.g. naloxone to treat opioid overdose, physical therapy to treat existing pain from a back injury) , and/or is it a harm reduction mechanism (e.g. safe needle exchange reduces harm associated with heroin addiction/use, decriminalization of heroin possession or use reduces the harm associated with heroin addiction/use). 		text	37		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	human_treatment_applicability	heal
 	treatment_novelty	Treatment novelty	Is the treatment, intervention, or solution that my study is relevant to totally novel, is it totally established, does it have some element of novelty added to an established intervention (novel added to established, established used in a novel population, setting, or combination)? .		text	38		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	human_treatment_applicability	heal
 	treatment_application_level	Is the Treatment given/applied to individuals or populations?	Is the treatment, intervention, or solution that my study is relevant to applied at the individual level (e.g. a doctor prescribes a drug or physical therapy regimen to a patient) or at the population/community/group level (e.g. a city changes good samaritan naloxone laws, or implements a safe needle exchange center, or adds park maintenance resources to the budget to provide more access to outside places to exercise)?		text	39		FALSE	TRUE	TRUE	FALSE	FALSE	FALSE	human_treatment_applicability	heal
@@ -74,14 +74,290 @@
 	data_restricted	all		0											
 	data_restricted	some		1											
 	data_restricted	none		2											
-	data_collection_status	started		0											
-	data_collection_status	not started		1											
+	data_collection_status	not started		0											
+	data_collection_status	started		1											
 	data_collection_status	finished		2											
-	data_release_status	started		0											
-	data_release_status	not started		1											
+	data_release_status	not started		0											
+	data_release_status	started		1											
 	data_release_status	finished		2											
 	study_translational_focus	Condition		0											
-	study_translational_focus	Treatment 		1											
-	study_translational_topic_grouping	Biology and Health													
-	study_translational_topic_grouping	Mental Health													
-	study_translational_topic_grouping	Social Determinants													
+	study_translational_focus	Treatment		1											
+	study_primary_or_secondary	Primary Research		0											
+	study_primary_or_secondary	Secondary Research		1											
+	study_observational_or_experimental	Observational Research		0											
+	study_observational_or_experimental	Experimental Research		1											
+	study_translational_topic_grouping	Biology and Health		0											
+	study_translational_topic_grouping	Mental Health		1											
+	study_translational_topic_grouping	Social Determinants		2											
+	study_translational_topic_grouping	Public Attitudes or Stigma		3											
+	study_stage	Pre-Research/Protocol Development		0											
+	study_stage	Basic Research		1											
+	study_stage	Pre-Clinical Research		2											
+	study_stage	Clinical Research		3											
+	study_stage	Implementation Research		4											
+	study_stage	Post-market Research		5											
+	study_stage	Business Development		6											
+	study_stage	Epidemiologic Research		7											
+	study_subject_type	Human		0											
+	study_subject_type	Animal		1											
+	study_subject_type	Human cell/tissue/tissue model		2											
+	study_subject_type	Animal cell/tissue/tissue model		3											
+	study_subject_type	Molecule (e.g. chemical/protein engineering, protein crystallization)		4											
+	study_type_design	Basic Research - Theory/Modeling		0											
+	study_type_design	Basic Research - Applied		1											
+	study_type_design	Basic Research - Method/Protocol development		2											
+	study_type_design	Basic Research - Animal study		3											
+	study_type_design	Basic Research - Cell study		4											
+	study_type_design	Basic Research - Genetic study		5											
+	study_type_design	Basic Research - Biochemistry study		6											
+	study_type_design	Basic Research - Biophysical study		7											
+	study_type_design	Basic Research - Gene sequencing		8											
+	study_type_design	Basic Research - Genetic Engineering		9											
+	study_type_design	Basic Research - Material Development		10											
+	study_type_design	Basic Research - Device Development		11											
+	study_type_design	Basic Research - Small molecule screen		12											
+	study_type_design	Basic Research - High throughput screen		13											
+	study_type_design	Basic Research - Screen, other		14											
+	study_type_design	Clinical Research - Phase I		15											
+	study_type_design	Clinical Research - Phase II		16											
+	study_type_design	Clinical Research - Phase III		17											
+	study_type_design	Clinical Research - Phase IV		18											
+	study_type_design	Clinical Research - Therapy/drug study without intervention		19											
+	study_type_design	Clinical Research - Case Report or Series		20											
+	study_type_design	Preclinical Research		21											
+	study_type_design	Randomized Control Trial		22											
+	study_type_design	Pre/Post		23											
+	study_type_design	Stepped Wedge		24											
+	study_type_design	Regression Discontinuity		25											
+	study_type_design	Difference in Differences		26											
+	study_type_design	Cross-over		27											
+	study_type_design	Natural Experiment		28											
+	study_type_design	Cohort, prospective		29											
+	study_type_design	Cohort, retrospective		30											
+	study_type_design	Cohort - panel, longitudinal		31											
+	study_type_design	Cohort - cross-sectional, longitudinal		32											
+	study_type_design	Cohort - cross-sectional, single time-point		33											
+	study_type_design	Case control		34											
+	study_type_design	Ecological		35											
+	study_type_design	Monitoring/surveillance		36											
+	study_type_design	Inventory		37											
+	study_type_design	Curation		38											
+	study_type_design	Meta-analysis		39											
+	study_type_design	Review		40											
+	study_type_design	Review, Systematic		41											
+	study_type_design	Review, Simple (narrative)		42											
+	treatment_investigation_stage_or_type	target discovery		0											
+	treatment_investigation_stage_or_type	target mechanism		1											
+	treatment_investigation_stage_or_type	treatment discovery		2											
+	treatment_investigation_stage_or_type	treatment mechanism		3											
+	treatment_investigation_stage_or_type	treatment efficacy		4											
+	treatment_investigation_stage_or_type	differential treatment efficacy		5											
+	treatment_investigation_stage_or_type	treatment implementation		6											
+	treatment_investigation_stage_or_type	treatment availability or accessibility		7											
+	treatment_mode	Preventive (prevention of an occurrence)		0											
+	treatment_mode	Therapeutic (treating an occurrence)		1											
+	treatment_mode	Harm Reduction (preventing more of an occurrence, or preventing harm from an occurrence)		2											
+	treatment_novelty	Novel		0											
+	treatment_novelty	Novel, added to established		1											
+	treatment_novelty	Established		2											
+	treatment_novelty	Established, used in novel population, setting, or combination		3											
+	treatment_application_level	Individual		0											
+	treatment_application_level	Population		1											
+	treatment_type	drug		0											
+	treatment_type	non-opioid drug		1											
+	treatment_type	opioid drug		2											
+	treatment_type	non-biologic drug		3											
+	treatment_type	biologic drug		4											
+	treatment_type	non-drug		5											
+	treatment_type	device		6											
+	treatment_type	behavioral		7											
+	treatment_type	psychotherapy		8											
+	treatment_type	group therapy		9											
+	treatment_type	physical therapy		10											
+	treatment_type	exercise		11											
+	treatment_type	education		12											
+	treatment_type	community resources/supports		13											
+	treatment_type	economic supports		14											
+	treatment_type	housing supports		15											
+	treatment_type	case management		16											
+	treatment_type	environmental (indoors)		17											
+	treatment_type	environmental (outdoors)		18											
+	treatment_type	law/policy		19											
+	treatment_type	surgical procedure		20											
+	treatment_type	nutritional		21											
+	treatment_type	nutritional supplement		22											
+	treatment_type	gene therapy		23											
+	treatment_type	immunotherapy		24											
+	treatment_type	electrotherapy		25											
+	condition_category	Opioid use and opioid use disorder		0											
+	condition_category	Opioid use and opioid use disorder, primary occurrence		1											
+	condition_category	Opioid use and opioid use disorder, relapse		2											
+	condition_category	Opioid use and opioid use disorder, chronic		3											
+	condition_category	Opioid overdose		4											
+	condition_category	Opioid exposure		5											
+	condition_category	(Non-opioid) Substance use		6											
+	condition_category	Co-occurring (Opioid or Non-opioid) Substance use and Mental Health disorder		7											
+	condition_category	Pain		8											
+	condition_category	Pain, acute		9											
+	condition_category	Pain, chronic		10											
+	condition_category	Pain, acute to chronic transition		11											
+	condition_category	Pain, resulting from injury		12											
+	condition_category	Pain, resulting from surgery		13											
+	condition_category	Pain, resulting from chronic illness		14											
+	condition_category	Pain, idiopathic (unknown origin)		15											
+	condition_investigation_stage_or_type	Incidence of condition		0											
+	condition_investigation_stage_or_type	Risk for condition		1											
+	condition_investigation_stage_or_type	Differential risk for condition		2											
+	condition_investigation_stage_or_type	Mechanism of condition		3											
+	condition_investigation_stage_or_type	Impact of condition		4											
+	condition_investigation_stage_or_type	Public attitudes towards or perception of condition		5											
+	condition_investigation_stage_or_type	Treatment of condition		6											
+	pain_treatment_or_study_target_condition	Causal Condition		0											
+	pain_treatment_or_study_target_condition	Pain		1											
+	pain_treatment_or_study_target_condition	Pain, acute		2											
+	pain_treatment_or_study_target_condition	Pain, chronic		3											
+	gender_applicability	Cis Male		0											
+	gender_applicability	Cis Female		1											
+	gender_applicability	Trans Male		2											
+	gender_applicability	Trans Female		3											
+	gender_applicability	Agender, Non-binary, gender non-conforming		4											
+	gender_applicability	Gender Queer		5											
+	gender_applicability	Intersex		6											
+	gender_applicability	Not applicable		7											
+	sexual_identity_applicability	Heterosexual		0											
+	sexual_identity_applicability	Homosexual		1											
+	sexual_identity_applicability	Bisexual		2											
+	sexual_identity_applicability	Pansexual		3											
+	sexual_identity_applicability	Queer		4											
+	sexual_identity_applicability	Asexual		5											
+	sexual_identity_applicability	Not applicable		6											
+	age_applicability	Fetus		0											
+	age_applicability	Infant, newborn (Birth to 1 month)		1											
+	age_applicability	Infant (1 to 23 months)		2											
+	age_applicability	Child, preschool (2 to 5 years)		3											
+	age_applicability	Child (6 to 12 years)		4											
+	age_applicability	Adolescent (13 to 18 years)		5											
+	age_applicability	Adult (19 to 44 years)		6											
+	age_applicability	Middle aged adult (45 to 64 years)		7											
+	age_applicability	Aged adult (65 to 79 years)		8											
+	age_applicability	Aged, 80 and over (80 years and over)		9											
+	irb_vulnerability_conditions_applicability	Pregnant women		0											
+	irb_vulnerability_conditions_applicability	Human fetuses		1											
+	irb_vulnerability_conditions_applicability	Neonates		2											
+	irb_vulnerability_conditions_applicability	Prisoners		3											
+	irb_vulnerability_conditions_applicability	Children		4											
+	irb_vulnerability_conditions_applicability	Individuals with physical disabilities		5											
+	irb_vulnerability_conditions_applicability	Individuals with mental disabilities or cognitive impairments		6											
+	irb_vulnerability_conditions_applicability	Economically disadvantaged		7											
+	irb_vulnerability_conditions_applicability	Socially disadvantaged		8											
+	irb_vulnerability_conditions_applicability	Terminally ill or very sick		9											
+	irb_vulnerability_conditions_applicability	Racial or ethnic minorities		10											
+	irb_vulnerability_conditions_applicability	Institutionalized persons (for example, persons in correctional facilities, nursing homes or mental health facilities)		11											
+	geographic_applicability	Non US		0											
+	geographic_applicability	US - National		1											
+	geographic_applicability	US - Specific States		2											
+	geographic_applicability	US - Specific Counties		3											
+	geographic_applicability	AK		4											
+	geographic_applicability	AL		5											
+	geographic_applicability	AR		6											
+	geographic_applicability	AZ		7											
+	geographic_applicability	CA		8											
+	geographic_applicability	CO		9											
+	geographic_applicability	CT		10											
+	geographic_applicability	DE		11											
+	geographic_applicability	FL		12											
+	geographic_applicability	GA		13											
+	geographic_applicability	HI		14											
+	geographic_applicability	IA		15											
+	geographic_applicability	ID		16											
+	geographic_applicability	IL		17											
+	geographic_applicability	IN		18											
+	geographic_applicability	KS		19											
+	geographic_applicability	KY		20											
+	geographic_applicability	LA		21											
+	geographic_applicability	MA		22											
+	geographic_applicability	MD		23											
+	geographic_applicability	ME		24											
+	geographic_applicability	MI		25											
+	geographic_applicability	MN		26											
+	geographic_applicability	MO		27											
+	geographic_applicability	MS		28											
+	geographic_applicability	MT		29											
+	geographic_applicability	NC		30											
+	geographic_applicability	ND		31											
+	geographic_applicability	NE		32											
+	geographic_applicability	NH		33											
+	geographic_applicability	NJ		34											
+	geographic_applicability	NM		35											
+	geographic_applicability	NV		36											
+	geographic_applicability	NY		37											
+	geographic_applicability	OH		38											
+	geographic_applicability	OK		39											
+	geographic_applicability	OR		40											
+	geographic_applicability	PA		41											
+	geographic_applicability	RI		42											
+	geographic_applicability	SC		43											
+	geographic_applicability	SD		44											
+	geographic_applicability	TN		45											
+	geographic_applicability	TX		46											
+	geographic_applicability	UT		47											
+	geographic_applicability	VA		48											
+	geographic_applicability	VT		49											
+	geographic_applicability	WA		50											
+	geographic_applicability	WI		51											
+	geographic_applicability	WV		52											
+	geographic_applicability	WY		53											
+	data_orientation	Quantitative		0											
+	data_orientation	Qualitative		1											
+	data_source	Administrative		0											
+	data_source	Government Collected/Measured		1											
+	data_source	Clinical/EHR		2											
+	data_source	Laboratory		3											
+	data_source	Researcher Collected/Measured		4											
+	data_source	Patient-Reported		5											
+	data_type	Genomic		0											
+	data_type	Proteomic		1											
+	data_type	Biochemical		2											
+	data_type	Biophysical		3											
+	data_type	Imaging		4											
+	data_type	Interview/Focus Group		5											
+	data_type	Interview/Focus Group - structured		6											
+	data_type	Interview/Focus Group - semi-structured		7											
+	data_type	Interview/Focus Group - unstructured		8											
+	data_type	Questionnaire/Survey/Assessment		9											
+	data_type	Questionnaire/Survey/Assessment - validated instrument		10											
+	data_type	Questionnaire/Survey/Assessment - unvalidated instrument		11											
+	subject_data_unit_of_collection	Individual		0											
+	subject_data_unit_of_collection	Community, Group, Cluster, Population		1											
+	subject_data_unit_of_analysis	Individual		0											
+	subject_data_unit_of_analysis	Community, Group, Cluster, Population		1											
+	subject_data_level_available	Individual - Unaggregated		0											
+	subject_data_level_available	Individual - Aggregated		1											
+	subject_data_level_available	Community, Group, Cluster, Population - Unaggregated		2											
+	subject_data_level_available	Community, Group, Cluster, Population - Aggregated		3											
+	subject_data_level_available	Unaggregated		4											
+	subject_data_level_available	Aggregated		5											
+	subject_data_level_available	Aggregated, across all (population summary statistics)		6											
+	subject_data_level_available	Aggregated, by treatment/exposure group		7											
+	subject_data_level_available	Aggregated, by demographic variable(s)		8											
+	subject_data_level_available	Aggregated, by geographic variable(s)		9											
+	subject_geographic_data_level_collected	Exact location		0											
+	subject_geographic_data_level_collected	Census block		1											
+	subject_geographic_data_level_collected	Census tract		2											
+	subject_geographic_data_level_collected	Zip code		3											
+	subject_geographic_data_level_collected	County		4											
+	subject_geographic_data_level_collected	Sub-state region		5											
+	subject_geographic_data_level_collected	State		6											
+	subject_geographic_data_level_collected	Multi-state region		7											
+	subject_geographic_data_level_collected	Nation		8											
+	subject_geographic_data_level_collected	No geographic data will be collected		9											
+	subject_geographic_data_level_available	Exact location		0											
+	subject_geographic_data_level_available	Census block		1											
+	subject_geographic_data_level_available	Census tract		2											
+	subject_geographic_data_level_available	Zip code		3											
+	subject_geographic_data_level_available	County		4											
+	subject_geographic_data_level_available	Sub-state region		5											
+	subject_geographic_data_level_available	State		6											
+	subject_geographic_data_level_available	Multi-state region		7											
+	subject_geographic_data_level_available	Nation		8											
+	subject_geographic_data_level_available	No geographic data will be made available		9											

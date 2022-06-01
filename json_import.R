@@ -4,7 +4,7 @@ library(tidyr)
 library(purrr)
 
 schema <- fromJSON(file="study-metadata-schema.json")
-dataverse <- read.csv("heal.tsv", sep="\t", header=F)
+#dataverse <- read.csv("heal.tsv", sep="\t", header=F)
 
 schema <- schema$properties
 
@@ -21,7 +21,7 @@ vocab <- terms %>% select(properties_id, enum) %>% unnest_longer(enum) %>%
   filter(!is.na(enum)) %>% bind_rows(vocab)
 
 vocab <- vocab %>% group_by(properties_id) %>% 
-  mutate(displayOrder=row_number()) %>%
+  mutate(displayOrder=row_number()-1) %>%
   rename(DatasetField=properties_id, Value=enum)
 
 #fields %>% filter(variable %in% dataverse$V2) %>% select(variable, label)
