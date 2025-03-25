@@ -109,27 +109,27 @@
 	study_subject_type	Human cell/tissue/tissue model		2											
 	study_subject_type	Animal cell/tissue/tissue model		3											
 	study_subject_type	Molecule (e.g. chemical/protein engineering, protein crystallization)		4											
-	study_type_design	Basic Research - Theory/Modeling		0											
-	study_type_design	Basic Research - Applied		1											
-	study_type_design	Basic Research - Method/Protocol development		2											
-	study_type_design	Basic Research - Animal study		3											
-	study_type_design	Basic Research - Cell study		4											
-	study_type_design	Basic Research - Genetic study		5											
-	study_type_design	Basic Research - Biochemistry study		6											
-	study_type_design	Basic Research - Biophysical study		7											
-	study_type_design	Basic Research - Gene sequencing		8											
-	study_type_design	Basic Research - Genetic Engineering		9											
-	study_type_design	Basic Research - Material Development		10											
-	study_type_design	Basic Research - Device Development		11											
-	study_type_design	Basic Research - Small molecule screen		12											
-	study_type_design	Basic Research - High throughput screen		13											
-	study_type_design	Basic Research - Screen, other		14											
-	study_type_design	Clinical Research - Phase I		15											
-	study_type_design	Clinical Research - Phase II		16											
-	study_type_design	Clinical Research - Phase III		17											
-	study_type_design	Clinical Research - Phase IV		18											
-	study_type_design	Clinical Research - Therapy/drug study without intervention		19											
-	study_type_design	Clinical Research - Case Report or Series		20											
+	study_type_design	Basic Research - Theory/Modeling		0	Basic Research – Theory/Modeling										
+	study_type_design	Basic Research - Applied		1	Basic Research – Applied										
+	study_type_design	Basic Research - Method/Protocol development		2	Basic Research – Method/Protocol development										
+	study_type_design	Basic Research - Animal study		3	Basic Research – Animal study										
+	study_type_design	Basic Research - Cell study		4	Basic Research – Cell study										
+	study_type_design	Basic Research - Genetic study		5	Basic Research – Genetic study										
+	study_type_design	Basic Research - Biochemistry study		6	Basic Research – Biochemistry study										
+	study_type_design	Basic Research - Biophysical study		7	Basic Research – Biophysical study										
+	study_type_design	Basic Research - Gene sequencing		8	Basic Research – Gene sequencing										
+	study_type_design	Basic Research - Genetic Engineering		9	Basic Research – Genetic Engineering										
+	study_type_design	Basic Research - Material Development		10	Basic Research – Material Development										
+	study_type_design	Basic Research - Device Development		11	Basic Research – Device Development										
+	study_type_design	Basic Research - Small molecule screen		12	Basic Research – Small molecule screen										
+	study_type_design	Basic Research - High throughput screen		13	Basic Research – High throughput screen										
+	study_type_design	Basic Research - Screen, other		14	Basic Research – Screen, other										
+	study_type_design	Clinical Research - Phase I		15	Clinical Research – Phase I										
+	study_type_design	Clinical Research - Phase II		16	Clinical Research – Phase II										
+	study_type_design	Clinical Research - Phase III		17	Clinical Research – Phase III										
+	study_type_design	Clinical Research - Phase IV		18	Clinical Research – Phase IV										
+	study_type_design	Clinical Research - Therapy/drug study without intervention		19	Clinical Research – Therapy/drug study without intervention										
+	study_type_design	Clinical Research - Case Report or Series		20	Clinical Research – Case Report or Series										
 	study_type_design	Preclinical Research		21											
 	study_type_design	Randomized Control Trial		22											
 	study_type_design	Pre/Post		23											
@@ -140,9 +140,9 @@
 	study_type_design	Natural Experiment		28											
 	study_type_design	Cohort, prospective		29											
 	study_type_design	Cohort, retrospective		30											
-	study_type_design	Cohort - panel, longitudinal		31											
-	study_type_design	Cohort - cross-sectional, longitudinal		32											
-	study_type_design	Cohort - cross-sectional, single time-point		33											
+	study_type_design	Cohort - panel, longitudinal		31	Cohort – panel, longitudinal										
+	study_type_design	Cohort - cross-sectional, longitudinal		32	Cohort – cross-sectional, longitudinal										
+	study_type_design	Cohort - cross-sectional, single time-point		33	Cohort – cross-sectional, single time-point										
 	study_type_design	Case control		34											
 	study_type_design	Ecological		35											
 	study_type_design	Monitoring/surveillance		36											
