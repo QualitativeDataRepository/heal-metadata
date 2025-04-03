@@ -88,6 +88,7 @@
 	data_release_status	finished		2											
 	study_translational_focus	Condition		0											
 	study_translational_focus	Treatment		1											
+	study_translational_focus	Treatment of a Condition													
 	study_primary_or_secondary	Primary Research		0											
 	study_primary_or_secondary	Secondary Research		1											
 	study_observational_or_experimental	Observational Research		0											
@@ -152,6 +153,9 @@
 	study_type_design	Review		40											
 	study_type_design	Review, Systematic		41											
 	study_type_design	Review, Simple (narrative)		42											
+	study_type_design	Sequential													
+	study_type_design	Parallel													
+	study_type_design	Parallel Assignment													
 	treatment_investigation_stage_or_type	target discovery		0											
 	treatment_investigation_stage_or_type	target mechanism		1											
 	treatment_investigation_stage_or_type	treatment discovery		2											
