@@ -1,5 +1,5 @@
 #metadataBlock	name	dataverseAlias	displayName												
-	heal		HEAL metadata schema												
+	heal	heal	HEAL metadata schema												
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
 	metadata_location	HEAL metadata			none	0		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
 	clinical_trials_study_ID	ClinicalTrials.gov Study ID	ClinicalTrials.gov study ID; only applicable if study is a reportable clinical trial and registered on ClinicalTrials.gov.		text	1		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	metadata_location	heal
