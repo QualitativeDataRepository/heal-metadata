@@ -20,7 +20,7 @@
 	registrant_middle_initial	Middle initial of study registrant	Middle initial of study registrant		text	16	<b>#NAME:</b> #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
 	registrant_last_name	Last name of study registrant	Last name of study registrant		text	17	<b>#NAME:</b> #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
 	registrant_affiliation	Institutional affiliation of study registrant	Institutional affiliation of study registrant		text	18	<b>#NAME:</b> #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
-	registrant_email	Institutional email of study registrant	Institutional email of study registrant		email	19	#EMAIL	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
+	registrant_email	Institutional email of study registrant	Institutional email of study registrant		email	19	<b>#NAME:</b> #EMAIL	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	registrants	heal
 	data_availability	Data availability			none	20		FALSE	FALSE	FALSE	FALSE	TRUE	TRUE		heal
 	produce_data	Will the study collect or produce data?	Indicate whether or not the study will collect/produce (primary or secondary) data.		text	21	<b>#NAME:</b> #VALUE<br/>	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
 	data_available	Will the study make data available?	If study will collect/produce data, indicate whether all, some, or none of the data will be made available.		text	22	<b>#NAME:</b> #VALUE<br/>	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	data_availability	heal
